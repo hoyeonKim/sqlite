@@ -21,6 +21,9 @@
 		007CD0871883D61600B80632 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007CD0691883D61600B80632 /* UIKit.framework */; };
 		007CD08F1883D61600B80632 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 007CD08D1883D61600B80632 /* InfoPlist.strings */; };
 		007CD0911883D61600B80632 /* p103Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 007CD0901883D61600B80632 /* p103Tests.m */; };
+		007CD09C1883D62900B80632 /* movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 007CD09B1883D62900B80632 /* movie.m */; };
+		007CD0A01883E04800B80632 /* fd.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 007CD09F1883E04800B80632 /* fd.sqlite */; };
+		007CD0A21883E0E700B80632 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 007CD0A11883E0E700B80632 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		007CD08C1883D61600B80632 /* p103Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "p103Tests-Info.plist"; sourceTree = "<group>"; };
 		007CD08E1883D61600B80632 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		007CD0901883D61600B80632 /* p103Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = p103Tests.m; sourceTree = "<group>"; };
+		007CD09A1883D62900B80632 /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movie.h; sourceTree = "<group>"; };
+		007CD09B1883D62900B80632 /* movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movie.m; sourceTree = "<group>"; };
+		007CD09F1883E04800B80632 /* fd.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = fd.sqlite; path = ../../fd.sqlite; sourceTree = "<group>"; };
+		007CD0A11883E0E700B80632 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007CD0A21883E0E700B80632 /* libsqlite3.dylib in Frameworks */,
 				007CD0681883D61600B80632 /* CoreGraphics.framework in Frameworks */,
 				007CD06A1883D61600B80632 /* UIKit.framework in Frameworks */,
 				007CD0661883D61600B80632 /* Foundation.framework in Frameworks */,
@@ -101,6 +109,7 @@
 		007CD0641883D61600B80632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				007CD0A11883E0E700B80632 /* libsqlite3.dylib */,
 				007CD0651883D61600B80632 /* Foundation.framework */,
 				007CD0671883D61600B80632 /* CoreGraphics.framework */,
 				007CD0691883D61600B80632 /* UIKit.framework */,
@@ -112,6 +121,7 @@
 		007CD06B1883D61600B80632 /* p103 */ = {
 			isa = PBXGroup;
 			children = (
+				007CD09F1883E04800B80632 /* fd.sqlite */,
 				007CD0741883D61600B80632 /* AppDelegate.h */,
 				007CD0751883D61600B80632 /* AppDelegate.m */,
 				007CD0771883D61600B80632 /* Main.storyboard */,
@@ -130,6 +140,8 @@
 				007CD06E1883D61600B80632 /* InfoPlist.strings */,
 				007CD0711883D61600B80632 /* main.m */,
 				007CD0731883D61600B80632 /* p103-Prefix.pch */,
+				007CD09A1883D62900B80632 /* movie.h */,
+				007CD09B1883D62900B80632 /* movie.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,6 +243,7 @@
 				007CD07E1883D61600B80632 /* Images.xcassets in Resources */,
 				007CD0701883D61600B80632 /* InfoPlist.strings in Resources */,
 				007CD0791883D61600B80632 /* Main.storyboard in Resources */,
+				007CD0A01883E04800B80632 /* fd.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +264,7 @@
 			files = (
 				007CD07C1883D61600B80632 /* ViewController.m in Sources */,
 				007CD0761883D61600B80632 /* AppDelegate.m in Sources */,
+				007CD09C1883D62900B80632 /* movie.m in Sources */,
 				007CD0721883D61600B80632 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
